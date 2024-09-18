@@ -32,6 +32,7 @@ main{
 .card{
     border-radius: 0.62rem;
     padding: 2rem;
+    box-shadow: 0  10px 20px var(--clr--gray);
 }
 .p-card{
     background-color: var(--clr--violet);
@@ -65,14 +66,48 @@ main{
     border-radius: 50%;
     overflow: hidden;
     max-width: 2rem;
+    border:2px solid rgba(255, 255, 255, 0.5);
+}
+.b-card .img-wrapper{
+    border-color:var(--clr--violet);
 }
 
+.name-wrapper .name{
+    font-weight: 600;
+}
+
+.name-wrapper .status{
+    font-weight: 300;
+    color: var(--clr--gray);
+}
+
+.txt-wrapper .bold-txt{
+    letter-spacing: .08rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.txt-wrapper .intro-txt{
+    opacity: .6;
+    letter-spacing: .08rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.p-card{
+    position: relative;
+}
+.p-card>img{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+.p-card .txt-wrapper{
+    position: relative;
+    z-index: 1;
+}
 /* media query */
 
 @media screen and (min-width: 60rem) {
-    body{
-        height: 100vh;
-    }
     main{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,1fr);
