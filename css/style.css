@@ -43,6 +43,9 @@ main{
 .w-card{
     background-color: var(--clr--white);
 }
+.w-card .txt-wrapper .bold-txt{
+    font-weight: 600;
+}
 .b-card{
     background-color: var(--clr--d--blackish);
 }
@@ -111,7 +114,7 @@ main{
     main{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,1fr);
-        max-width: 70rem;
+        max-width: 80rem;
     }
     .p-card{
         grid-row: 1/2;
